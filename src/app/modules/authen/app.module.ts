@@ -1,12 +1,15 @@
 import { NgModule} from '@angular/core';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
- declarations: [],
-  imports: [
-    
+ declarations: [
+    LoginComponent
   ],
+  imports: [
 
+  ],
+  exports:[LoginComponent],
   providers: [],
   bootstrap: []
 })
-export class AppModuleAuth { } 
+export class AppModuleAuth { }

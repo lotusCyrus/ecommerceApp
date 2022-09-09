@@ -7,14 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {environment} from 'src/environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import MaterialModule} from './material-ui.module';
+import {MyMaterialModule} from './material-ui.module';
+import { MenuTopComponent } from "./modules/menus/components/menu-top/menu-top.component";
+//import {AppModuleCommun} from './modules/commun/app.module'
 //import { AppModuleAdmin } from './modules/admin/app.module.ts';
 
 @NgModule({
- declarations: [AppComponent],
+ declarations: [AppComponent, MenuTopComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,15 +21,12 @@ import MaterialModule} from './material-ui.module';
     AngularFireDatabaseModule,
     AuthModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatProgressSpinnerModule,
     MyMaterialModule,
-    AppModuleAdmin,
-    AppModuleAuth,
-    AppModuleCommun,
-    AppModuleCourses,
-    AppModuleMenus
+    //AppModuleCommun,
+    //AppModuleAdmin,
+    //AppModuleAuth,
+    //AppModuleCourses,
+    //AppModuleMenus
   ],
 
   providers: [],

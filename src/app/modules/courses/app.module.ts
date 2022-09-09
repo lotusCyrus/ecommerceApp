@@ -1,10 +1,15 @@
 import { NgModule} from '@angular/core';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
- declarations: [],
-  imports: [
-    
+ declarations: [
+    CoursesComponent
   ],
+  imports: [
+
+  ],
+
+  exports:[CoursesComponent],
 
   providers: [],
   bootstrap: []
