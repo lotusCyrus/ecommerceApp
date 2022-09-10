@@ -9,8 +9,10 @@ import {environment} from 'src/environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MyMaterialModule} from './material-ui.module';
 import { MenuTopComponent } from "./modules/menus/components/menu-top/menu-top.component";
-//import {AppModuleCommun} from './modules/commun/app.module'
-//import { AppModuleAdmin } from './modules/admin/app.module.ts';
+
+import {AppModuleCourses} from './modules/courses/app.module';
+import { AppModuleCommun } from './modules/commun/app.module'
+import { AppModuleAdmin } from './modules/admin/app.module.ts';
 
 @NgModule({
  declarations: [AppComponent, MenuTopComponent],
@@ -22,10 +24,10 @@ import { MenuTopComponent } from "./modules/menus/components/menu-top/menu-top.c
     AuthModule,
     BrowserAnimationsModule,
     MyMaterialModule,
-    //AppModuleCommun,
-    //AppModuleAdmin,
+    AppModuleCourses,
+    AppModuleCommun,
+    AppModuleAdmin,
     //AppModuleAuth,
-    //AppModuleCourses,
     //AppModuleMenus
   ],
 

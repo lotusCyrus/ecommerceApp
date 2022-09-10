@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import {MyMaterialModule} from 'src/app/material-ui.module';
 
 @NgModule({
  declarations: [
@@ -11,7 +12,7 @@ import { AboutComponent } from './components/about/about.component';
     MyMaterialModule,
   ],
 
- exports:[HomeComponent],
+ exports:[HomeComponent, AboutComponent],
   providers: [],
   bootstrap: []
 })
