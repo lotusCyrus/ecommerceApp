@@ -11,8 +11,9 @@ import {MyMaterialModule} from './material-ui.module';
 import { MenuTopComponent } from "./modules/menus/components/menu-top/menu-top.component";
 
 import {AppModuleCourses} from './modules/courses/app.module';
-import { AppModuleCommun } from './modules/commun/app.module'
-import { AppModuleAdmin } from './modules/admin/app.module.ts';
+import { AppModuleCommun } from './modules/commun/app.module';
+import { AppModuleAuth } from './modules/authen/app.module';
+
 
 @NgModule({
  declarations: [AppComponent, MenuTopComponent],
@@ -26,9 +27,8 @@ import { AppModuleAdmin } from './modules/admin/app.module.ts';
     MyMaterialModule,
     AppModuleCourses,
     AppModuleCommun,
-    AppModuleAdmin,
-    //AppModuleAuth,
-    //AppModuleMenus
+    AppModuleAuth,
+
   ],
 
   providers: [],

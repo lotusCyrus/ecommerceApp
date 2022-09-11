@@ -3,10 +3,10 @@
   <button mat-icon-button>
     <mat-icon>menu</mat-icon>
     </button>
-    <a mat-button href="">Home</a>
-    <a mat-button href="Courses">Courses</a>
-    <a mat-button href="Login">Login</a>
-    <a mat-button href="About">About</a>
+    <a mat-button [routerLink]="'/'">Home</a>
+    <a mat-button [routerLink]="'/Courses'">Courses</a>
+    <a mat-button [routerLink]="'/Login'">Login</a>
+    <a mat-button [routerLink]="'/About'">About</a>
     <a mat-button>0<i class="material-icons">add_shopping_cart</i></a>
 
   </mat-toolbar-row>
