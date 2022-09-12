@@ -9,7 +9,7 @@ import {AngularFireDatabase} from '@angular/fire/compat/database';
 
 	constructor(private db:AngularFireDatabase)
 	{
-    
+
 	}
   title = 'ecommerce';
   ngOnInit()
