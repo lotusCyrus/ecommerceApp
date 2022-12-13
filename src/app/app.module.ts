@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from "@angular/common";
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+//import { provideAuth } from "@angular/fire/auth";
+
 import {AuthModule} from '@angular/fire/auth';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +27,7 @@ import { AppModuleAuth } from './modules/authen/app.module';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     AuthModule,
     BrowserAnimationsModule,
     MyMaterialModule,

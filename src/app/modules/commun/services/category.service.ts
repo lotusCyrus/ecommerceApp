@@ -17,9 +17,11 @@ export class CategoryService {
                .snapshotChanges()
               .pipe(
               map(change=>change.map(c=>({
-                 key:c.payload.key,...c.payload.val()  as {}
+                 key:c.payload.key, ...c.payload.val()  as {}
 
                 }))
               ))
   }
+
+  
 }
